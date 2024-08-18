@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Calculator app</title>
+  <!-- CSS File -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Math.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/13.0.3/math.js"
+    integrity="sha512-lAVGwhTndbBUjJlN0Lq4BNuOP0lpuGA9OUCA9bxRZrsehpmkiv8BcYdp91ON3XqJHWmVURGTw1d1W3LCr1k/1g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <div class="calculator">
+    <div class="heading">
+      <label for="calcInput">calc</label>
+      <div>
+        <p>Theme</p>
+        <div class="toggle-container">
+          <div>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+          </div>
+          <div class="toggle">
+            <div class="bullet"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <input type="text" name="calcInput" id="calcInput" disabled>
+    <div class="keypad">
+      <button type="button" class="btn">7</button>
+      <button type="button" class="btn">8</button>
+      <button type="button" class="btn">9</button>
+      <button type="button" class="btn del">DEL</button>
+      <button type="button" class="btn">4</button>
+      <button type="button" class="btn">5</button>
+      <button type="button" class="btn">6</button>
+      <button type="button" class="btn">+</button>
+      <button type="button" class="btn">1</button>
+      <button type="button" class="btn">2</button>
+      <button type="button" class="btn">3</button>
+      <button type="button" class="btn">-</button>
+      <button type="button" class="btn">.</button>
+      <button type="button" class="btn">0</button>
+      <button type="button" class="btn">/</button>
+      <button type="button" class="btn">x</button>
+      <button type="button" class="btn reset">RESET</button>
+      <button type="button" class="btn calc">=</button>
+    </div>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>
