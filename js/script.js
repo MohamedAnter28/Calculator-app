@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
           const expression = currentInput.replace(/x/g, '*');
           const result = math.evaluate(expression);
-          calcInput.value = result;
-          currentInput = result.toString();
+          calcInput.value = result.toFixed(6);
+          currentInput = result.toFixed(6).toString();
         } catch (error) {
           calcInput.value = 'Error';
           currentInput = '';
@@ -32,9 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
 const bullet = document.querySelector('.bullet');
 
 let theme = 1;
+
+
 
 function changeTheme() {
   theme = (theme % 3) + 1;
