@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
           const expression = currentInput.replace(/x/g, '*');
           const result = math.evaluate(expression);
-          calcInput.value = result.toFixed(6);
-          currentInput = result.toFixed(6).toString();
+          calcInput.value = result;
+          currentInput = result.toString();
         } catch (error) {
           calcInput.value = 'Error';
           currentInput = '';
